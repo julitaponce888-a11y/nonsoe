@@ -39,7 +39,7 @@ export default function Navbar() {
           className="flex items-center gap-3 leading-none"
         >
           <img
-            src="/images/1000225594.jpg"
+            src="/images/logo.jpg"
             alt="Logo MUNI"
             className="h-11 w-11 rounded-full object-cover ring-2 ring-sage-200"
           />
