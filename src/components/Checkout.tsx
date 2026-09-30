@@ -3,7 +3,7 @@ import { Check, ShoppingBag, Store, Truck, MapPin, Clock, CreditCard } from 'luc
 import { useCart } from '@/context/CartContext';
 import { useReveal } from '@/hooks/useReveal';
 import { pickupPoints } from '@/data/content';
-import { pricingModel, formatARS } from '@/data/catalog';
+import { shippingHome, formatARS } from '@/data/catalog';
 
 type DeliveryMethod = 'pickup' | 'home';
 type PaymentMethod = 'debito' | 'credito';
@@ -45,7 +45,7 @@ export default function Checkout() {
     expiry: '',
   });
 
-  const shippingCost = delivery === 'pickup' ? 0 : pricingModel.shippingHome;
+  const shippingCost = delivery === 'pickup' ? 0 : shippingHome;
   const total = subtotal + shippingCost;
 
   const formatCardNumber = (value: string) => {
@@ -357,7 +357,7 @@ export default function Checkout() {
                           Envío a domicilio
                         </span>
                         <span className="text-sm font-bold text-sage-600">
-                          {formatARS(pricingModel.shippingHome)}
+                          {formatARS(shippingHome)}
                         </span>
                       </div>
                       {delivery === 'home' && (

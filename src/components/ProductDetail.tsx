@@ -13,7 +13,7 @@ export default function ProductDetail({ doll, onClose }: ProductDetailProps) {
   if (!doll) return null;
 
   const cat = categories.find((c) => c.id === doll.categoryId);
-  const price = getFinalPrice();
+  const price = getFinalPrice(doll.id);
 
   const handleAddToCart = () => {
     addToCart({

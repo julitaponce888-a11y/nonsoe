@@ -94,8 +94,8 @@ export default function Pricing() {
         </div>
 
         <p className="mt-6 text-center text-xs text-sage-400">
-          Los precios son placeholders y se definirán próximamente. No son precios
-          reales de venta.
+          Precios calculados a partir del modelo de costos real del proyecto.
+          Margen de ganancia aplicado: 65%. Envío a domicilio: $3.500.
         </p>
       </div>
     </section>

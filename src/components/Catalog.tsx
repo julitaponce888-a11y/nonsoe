@@ -14,8 +14,6 @@ export default function Catalog({ onSelectDoll }: CatalogProps) {
   const [activeCategory, setActiveCategory] = useState<string>('todos');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
-  const finalPrice = getFinalPrice();
-
   const filteredDolls = useMemo(() => {
     let result = dolls;
     if (activeCategory !== 'todos') {
@@ -38,7 +36,7 @@ export default function Catalog({ onSelectDoll }: CatalogProps) {
     addToCart({
       id: doll.id,
       name: doll.name,
-      price: finalPrice,
+      price: getFinalPrice(doll.id),
       image: doll.image,
     });
   };
@@ -175,7 +173,7 @@ export default function Catalog({ onSelectDoll }: CatalogProps) {
                       {doll.name}
                     </h3>
                     <span className="font-serif text-lg font-medium text-terracotta-400">
-                      {formatARS(finalPrice)}
+                      {formatARS(getFinalPrice(doll.id))}
                     </span>
                   </div>
                   <p className="mt-1 text-sm font-medium italic text-sage-400">
@@ -228,8 +226,8 @@ export default function Catalog({ onSelectDoll }: CatalogProps) {
 
         {/* Disclaimer */}
         <p className="mx-auto mt-10 max-w-xl text-center text-xs text-sage-400">
-          Los precios se calculan automáticamente a partir del modelo de costos.
-          Todos los valores son estimaciones editables en pesos argentinos.
+          Los precios se calculan automáticamente a partir del modelo de costos real del proyecto.
+          Margen de ganancia aplicado: 65%.
         </p>
       </div>
     </section>

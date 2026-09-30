@@ -109,7 +109,7 @@ export const configSteps: ConfigStep[] = [
   },
 ];
 
-export const baseConfigPrice = 0; // Placeholder — se define cuando haya precios reales
+export const baseConfigPrice = 13500; // Precio promedio de un MUNI personalizado
 
 // ---------- Proceso de reutilización ----------
 export interface RecycleStep {
@@ -183,33 +183,33 @@ export interface PricingCard {
 
 export const pricingCards: PricingCard[] = [
   {
-    id: 'basico',
-    name: 'MUNI BÁSICO',
-    description: 'Un muñeco con texturas suaves, ideal para empezar a explorar.',
-    price: '$XX.XXX',
-    features: ['Texturas suaves', 'Materiales recuperados', 'Diseño simple'],
+    id: 'tortuga',
+    name: 'MUNI TORTUGA',
+    description: 'Un compañero suave para acompañar la calma y la autorregulación.',
+    price: '$9.300',
+    features: ['Tela reutilizada y relleno suave', 'Velcro y bordados', 'Costo de producción: $5.640', 'Materiales recuperados'],
   },
   {
-    id: 'sensorial',
-    name: 'MUNI SENSORIAL',
-    description: 'Diferentes texturas, estímulos y elementos para manipular.',
-    price: '$XX.XXX',
+    id: 'abeja',
+    name: 'MUNI ABEJA',
+    description: 'Exploración sensorial con texturas, botones, cierres y cordones.',
+    price: '$13.500',
     highlighted: true,
-    features: ['Múltiples texturas', 'Elementos manipulables', 'Estímulos sonoros suaves', 'Materiales recuperados'],
+    features: ['Botones y cierres incluidos', 'Cordones para motricidad', 'Costo de producción: $8.200', 'Materiales recuperados'],
   },
   {
-    id: 'personalizado',
-    name: 'MUNI PERSONALIZADO',
-    description: 'Elegí las características y creá un MUNI único a tu manera.',
-    price: '$XX.XXX',
-    features: ['Experiencia a elección', 'Texturas a elección', 'Estímulos a elección', 'Posibilidad de prenda propia'],
+    id: 'zorro',
+    name: 'MUNI ZORRO',
+    description: 'Comunicación y emociones con caras intercambiables y tarjetas.',
+    price: '$17.300',
+    features: ['Caras intercambiables (3)', 'Tarjetas de comunicación', 'Costo de producción: $10.475', 'Materiales recuperados'],
   },
 ];
 
 export const personalizacionPrenda = {
-  name: 'PERSONALIZACIÓN CON TU PRENDA',
-  description: 'Sumá una prenda propia para convertirla en parte de tu MUNI.',
-  price: '$X.XXX',
+  name: 'MUNI BALLENA — VERSIÓN CON PESO',
+  description: 'Incluye módulo de peso intercambiable para acompañar momentos de calma.',
+  price: '$15.700',
 };
 
 // ---------- ¿Cómo lo recibís? ----------

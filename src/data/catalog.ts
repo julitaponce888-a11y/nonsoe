@@ -87,17 +87,39 @@ export const dolls: Doll[] = [
     description:
       'La Abeja MUNI acompaña momentos cotidianos con actividades integradas, texturas variadas y detalles pensados para estimular la motricidad fina.',
     features: [
-      '6 texturas diferentes',
-      'Materiales suaves y seguros',
-      'Zonas de presión compresibles',
-      'Diseño modular',
+      'Botones y cierres',
+      'Cordones para atar',
+      'Velcro textil',
+      'Materiales reutilizados',
       'Uso supervisado',
     ],
-    elements: ['Peluche suave', 'Superficie con relieve', 'Tejido textil', 'Zona acolchada', 'Elementos para manipular'],
+    elements: ['Tela reutilizada', 'Relleno suave', 'Botones', 'Cierres', 'Cordones', 'Velcro'],
     ageRange: '3+ años',
     image: '/images/plushies/1000226064.jpg',
     imageAlt: 'MUNI Abeja — muñeco sensorial amarillo y negro',
     accentColor: 'sage',
+  },
+  {
+    id: 'ballena',
+    name: 'Ballena',
+    categoryId: 'relajacion',
+    tagline: 'Un compañero con peso para acompañar la calma.',
+    purpose:
+      'Un muñeco con módulo de peso intercambiable, pensado para acompañar momentos de calma y regulación.',
+    description:
+      'La Ballena MUNI combina texturas suaves con un módulo de peso intercambiable. Su cuerpo amplio invita al abrazo y al descanso.',
+    features: [
+      'Módulo de peso intercambiable',
+      'Texturas suaves',
+      'Tamaño abrazable',
+      'Materiales reutilizados',
+      'Uso supervisado',
+    ],
+    elements: ['Tela reutilizada', 'Relleno suave', 'Módulo de peso', 'Velcro', 'Hilo'],
+    ageRange: '3+ años',
+    image: '/images/plushies/1000226212.jpg',
+    imageAlt: 'MUNI Ballena — muñeco con peso para calma y regulación',
+    accentColor: 'bluegray',
   },
   {
     id: 'tortuga',
@@ -109,13 +131,13 @@ export const dolls: Doll[] = [
     description:
       'La Tortuga MUNI invita a bajar el ritmo. Su caparazón sensorial combina texturas y una zona central pensada para apoyar las manos.',
     features: [
-      'Colores contrastantes',
-      'Elementos desplazables seguros',
-      'Superficies con formas',
-      'Números y letras en textil',
+      'Texturas suaves',
+      'Caparazón sensorial',
+      'Velcro textil',
+      'Materiales reutilizados',
       'Uso supervisado',
     ],
-    elements: ['Formas geométricas en tela', 'Bucle de cuentas seguras', 'Etiquetas de colores', 'Letras textiles'],
+    elements: ['Tela reutilizada', 'Relleno suave', 'Velcro', 'Hilo'],
     ageRange: '4+ años',
     image: '/images/plushies/1000226210.jpg',
     imageAlt: 'MUNI Tortuga — muñeco sensorial suave y acolchado',
@@ -129,151 +151,156 @@ export const dolls: Doll[] = [
     purpose:
       'Un compañero para reconocer emociones, comunicarse y encontrar calma a través del juego.',
     description:
-      'El Zorro MUNI ayuda a expresar lo que se siente con expresiones intercambiables, tiras textiles y actividades para explorar el abrazo y el espacio.',
+      'El Zorro MUNI ayuda a expresar lo que se siente con caras intercambiables, tarjetas de comunicación y actividades para explorar el abrazo y el espacio.',
     features: [
-      'Relleno de peso suave',
-      'Peluche extra suave',
-      'Superficie lavable',
-      'Tamaño abrazable',
+      'Caras intercambiables (3)',
+      'Tarjetas de comunicación',
+      'Velcro textil',
+      'Materiales reutilizados',
       'Uso supervisado',
     ],
-    elements: ['Peluche de tacto suave', 'Zonas con peso distribuido', 'Tejido calido', 'Superficie lavable'],
+    elements: ['Tela reutilizada', 'Relleno suave', 'Caras intercambiables', 'Tarjetas de comunicación', 'Velcro'],
     ageRange: '3+ años',
     image: '/images/plushies/1000226212.jpg',
     imageAlt: 'MUNI Zorro — muñeco para expresar emociones',
     accentColor: 'lavender',
   },
-  {
-    id: 'timo',
-    name: 'Timo',
-    categoryId: 'atencion',
-    tagline: 'Concentrá tu energía.',
-    purpose:
-      'Un muñeco con elementos para manipular que acompañan la concentración y la organización de tareas.',
-    description:
-      'Timo es activo y enfocado. Incorpora elementos que se pueden mover, girar y ordenar, invitando a organizar secuencias y mantener las manos ocupadas durante actividades que requieren atención.',
-    features: [
-      'Elementos giratorios seguros',
-      'Cierres y botones textiles',
-      'Bucles de manipulación',
-      'Secuencias de colores',
-      'Uso supervisado',
-    ],
-    elements: ['Botones textiles', 'Cierres de tela', 'Bucle de cuentas', 'Elementos giratorios', 'Cordones seguros'],
-    ageRange: '5+ años',
-    image: '/images/plushies/1000226064.jpg',
-    imageAlt: 'MUNI Timo — muñeco de atención y organización',
-    accentColor: 'bluegray',
-  },
-  {
-    id: 'lia',
-    name: 'Lía',
-    categoryId: 'lectoescritura',
-    tagline: 'Las primeras palabras.',
-    purpose:
-      'Un muñeco que acerca letras, sonidos y palabras a través del juego táctil y visual.',
-    description:
-      'Lía es cuentan Historias. Incorpora letras en relieve, etiquetas con palabras simples y elementos que invitan a construir sílabas y nombrar lo que se toca. El acercamiento a la lectoescritura se da desde la exploración.',
-    features: [
-      'Letras en relieve',
-      'Etiquetas con palabras',
-      'Superficies con sílabas',
-      'Colores por vocal',
-      'Uso supervisado',
-    ],
-    elements: ['Letras textiles en relieve', 'Etiquetas con palabras simples', 'Bolsillos con letras', 'Colores por vocal'],
-    ageRange: '5+ años',
-    image: '/images/plushies/1000226210.jpg',
-    imageAlt: 'MUNI Lía — muñeco de lectoescritura con letras y palabras',
-    accentColor: 'terracotta',
-  },
-  {
-    id: 'tacto',
-    name: 'Tacto',
-    categoryId: 'accesibilidad',
-    tagline: 'Explorar con todos los sentidos.',
-    purpose:
-      'Un muñeco diseñado para poder explorarse mediante diferentes sentidos, incluyendo el tacto y el oído.',
-    description:
-      'Tacto es inclusivo. Su cuerpo combina texturas distinguibles al tacto, elementos que producen sonidos suaves y zonas con alto contraste visual. Está pensado para que cada niño encuentre su manera de interactuar.',
-    features: [
-      'Alto contraste visual',
-      'Elementos sonoros suaves',
-      'Texturas distinguibles',
-      'Formas reconocibles al tacto',
-      'Uso supervisado',
-    ],
-    elements: ['Crujidos suaves', 'Texturas de alto contraste', 'Relieves identificables', 'Elementos sonoros seguros'],
-    ageRange: '3+ años',
-    image: '/images/plushies/1000226212.jpg',
-    imageAlt: 'MUNI Tacto — muñeco de accesibilidad multi-sensorial',
-    accentColor: 'sage',
-  },
 ];
 
 // ============================================================
-//  MODELO DE COSTOS — Todos los valores en ARS (pesos argentinos)
-//
-//  Estos valores son ESTIMACIONES EDITABLES basadas en costos
-//  razonables de producción artesanal en Mendoza, Argentina.
-//  No representan precios verificados de proveedores reales.
-//  Reemplazá con valores reales cuando los consigas.
-//
-//  Última actualización: estimación editable (2026)
+//  MODELO DE COSTOS — Datos reales del proyecto MUNI
+//  Valores en ARS (pesos argentinos)
+//  Fuente: CSV de costos del proyecto
 // ============================================================
 
-export interface CostBreakdown {
-  label: string;
-  amount: number; // en ARS — EDITABLE
-  description: string;
+export interface MaterialCost {
+  material: string;
+  unit: string;
+  unitPrice: number;
+  quantity: number;
+  amount: number;
 }
 
-export interface PricingModel {
-  costs: CostBreakdown[];
-  marginPercent: number; // EDITABLE — margen de ganancia
-  shippingHome: number; // EDITABLE — tarifa de envío a domicilio en ARS
+export interface ProductCostBreakdown {
+  productId: string;
+  variableCost: number;
+  materials: MaterialCost[];
 }
 
-export const pricingModel: PricingModel = {
-  // Cada costo es una ESTIMACIÓN EDITABLE — reemplazar con valores reales de proveedores
-  costs: [
-    {
-      label: 'Materiales y telas',
-      amount: 8500,
-      description: 'Telas, texturas, relleno y materiales textiles.',
-    },
-    {
-      label: 'Confección y mano de obra',
-      amount: 6000,
-      description: 'Costura, armado y control de calidad.',
-    },
-    {
-      label: 'Packaging y etiquetas',
-      amount: 1200,
-      description: 'Empaque, etiquetas e instrucciones.',
-    },
-    {
-      label: 'Logística y comercial',
-      amount: 1800,
-    description: 'Costos de distribución, almacenamiento y comercialización.',
-    },
-  ],
-  marginPercent: 65, // Margen de ganancia — EDITABLE
-  shippingHome: 3500, // Envío a domicilio en Mendoza — EDITABLE
+export const productCosts: Record<string, ProductCostBreakdown> = {
+  ballena: {
+    productId: 'ballena',
+    variableCost: 9520,
+    materials: [
+      { material: 'Tela reutilizada', unit: 'kg', unitPrice: 3500, quantity: 0.35, amount: 1225 },
+      { material: 'Relleno', unit: 'kg', unitPrice: 8500, quantity: 0.40, amount: 3400 },
+      { material: 'Velcro', unit: 'm', unitPrice: 2200, quantity: 0.20, amount: 440 },
+      { material: 'Hilo', unit: 'carrete', unitPrice: 2500, quantity: 0.10, amount: 250 },
+      { material: 'Módulo de peso', unit: 'módulo', unitPrice: 3500, quantity: 1.00, amount: 3500 },
+      { material: 'Alcohol 70% / sanitizante', unit: 'L', unitPrice: 4100, quantity: 0.05, amount: 205 },
+      { material: 'Embalaje simple', unit: 'unidad', unitPrice: 500, quantity: 1.00, amount: 500 },
+    ],
+  },
+  tortuga: {
+    productId: 'tortuga',
+    variableCost: 5640,
+    materials: [
+      { material: 'Tela reutilizada', unit: 'kg', unitPrice: 3500, quantity: 0.30, amount: 1050 },
+      { material: 'Relleno', unit: 'kg', unitPrice: 8500, quantity: 0.35, amount: 2975 },
+      { material: 'Velcro', unit: 'm', unitPrice: 2200, quantity: 0.30, amount: 660 },
+      { material: 'Hilo', unit: 'carrete', unitPrice: 2500, quantity: 0.10, amount: 250 },
+      { material: 'Alcohol 70% / sanitizante', unit: 'L', unitPrice: 4100, quantity: 0.05, amount: 205 },
+      { material: 'Embalaje simple', unit: 'unidad', unitPrice: 500, quantity: 1.00, amount: 500 },
+    ],
+  },
+  zorro: {
+    productId: 'zorro',
+    variableCost: 10475,
+    materials: [
+      { material: 'Tela reutilizada', unit: 'kg', unitPrice: 3500, quantity: 0.28, amount: 980 },
+      { material: 'Relleno', unit: 'kg', unitPrice: 8500, quantity: 0.30, amount: 2550 },
+      { material: 'Velcro', unit: 'm', unitPrice: 2200, quantity: 0.45, amount: 990 },
+      { material: 'Hilo', unit: 'carrete', unitPrice: 2500, quantity: 0.10, amount: 250 },
+      { material: 'Tarjeta de comunicación', unit: 'unidad', unitPrice: 500, quantity: 1.00, amount: 500 },
+      { material: 'Caras intercambiables', unit: 'unidad', unitPrice: 1500, quantity: 3.00, amount: 4500 },
+      { material: 'Alcohol 70% / sanitizante', unit: 'L', unitPrice: 4100, quantity: 0.05, amount: 205 },
+      { material: 'Embalaje simple', unit: 'unidad', unitPrice: 500, quantity: 1.00, amount: 500 },
+    ],
+  },
+  abeja: {
+    productId: 'abeja',
+    variableCost: 8200,
+    materials: [
+      { material: 'Tela reutilizada', unit: 'kg', unitPrice: 3500, quantity: 0.25, amount: 875 },
+      { material: 'Relleno', unit: 'kg', unitPrice: 8500, quantity: 0.28, amount: 2380 },
+      { material: 'Velcro', unit: 'm', unitPrice: 2200, quantity: 0.25, amount: 550 },
+      { material: 'Hilo', unit: 'carrete', unitPrice: 2500, quantity: 0.10, amount: 250 },
+      { material: 'Botones', unit: 'unidad', unitPrice: 100, quantity: 4.00, amount: 400 },
+      { material: 'Cierres', unit: 'unidad', unitPrice: 1200, quantity: 2.00, amount: 2400 },
+      { material: 'Cordones', unit: 'm', unitPrice: 800, quantity: 0.80, amount: 640 },
+      { material: 'Alcohol 70% / sanitizante', unit: 'L', unitPrice: 4100, quantity: 0.05, amount: 205 },
+      { material: 'Embalaje simple', unit: 'unidad', unitPrice: 500, quantity: 1.00, amount: 500 },
+    ],
+  },
 };
 
-// Cálculo automático del costo total de producción
-export function getProductionCost(model: PricingModel = pricingModel): number {
-  return model.costs.reduce((sum, c) => sum + c.amount, 0);
+export interface FixedCost {
+  concept: string;
+  monthly: number;
 }
 
-// Cálculo automático del precio final con margen
-export function getFinalPrice(model: PricingModel = pricingModel): number {
-  const cost = getProductionCost(model);
-  return Math.round((cost * (1 + model.marginPercent / 100)) / 100) * 100; // redondea a centenas
+export const fixedCosts: FixedCost[] = [
+  { concept: 'Luz', monthly: 15000 },
+  { concept: 'Agua', monthly: 5000 },
+  { concept: 'Internet', monthly: 10000 },
+];
+
+export const fixedCostsTotal = 30000;
+
+export interface OperationalCost {
+  concept: string;
+  monthly: number;
 }
 
-// Formatear como moneda argentina
+export const operationalCosts: OperationalCost[] = [
+  { concept: 'Sueldo / mano de obra', monthly: 0 },
+  { concept: 'Marketing y difusión', monthly: 10000 },
+];
+
+export const operationalCostsTotal = 10000;
+
+export interface InitialInvestmentItem {
+  item: string;
+  amount: number;
+}
+
+export const initialInvestment: InitialInvestmentItem[] = [
+  { item: 'Máquina de coser familiar', amount: 390000 },
+  { item: 'Tijeras de confección', amount: 56000 },
+  { item: 'Kit de agujas', amount: 8000 },
+  { item: 'Cinta métrica / herramientas básicas', amount: 8000 },
+];
+
+export const initialInvestmentTotal = 462000;
+export const aportePorIntegrante = 92400;
+
+export const marginPercent = 65;
+export const shippingHome = 3500;
+
+const averageVariableCost = Math.round(
+  Object.values(productCosts).reduce((sum, p) => sum + p.variableCost, 0) / Object.keys(productCosts).length
+);
+
+export function getProductionCost(productId: string): number {
+  return productCosts[productId]?.variableCost ?? averageVariableCost;
+}
+
+export function getFinalPrice(productId: string): number {
+  const cost = getProductionCost(productId);
+  return Math.round((cost * (1 + marginPercent / 100)) / 100) * 100;
+}
+
 export function formatARS(amount: number): string {
-  return '$' + amount.toLocaleString('es-AR');
+  return '
+ + amount.toLocaleString('es-AR');
 }
