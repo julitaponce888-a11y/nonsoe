@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-cream-100 text-sage-600 font-sans antialiased;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+    line-height: 1.2;
+  }
+
+  ::selection {
+    @apply bg-sage-200 text-sage-600;
+  }
+}
+
+@layer components {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-sage-500 px-6 py-3 text-sm font-semibold text-cream-50 transition-all duration-300 hover:bg-sage-600 hover:shadow-soft-lg active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-sage-300 bg-transparent px-6 py-3 text-sm font-semibold text-sage-600 transition-all duration-300 hover:bg-sage-100 active:scale-95;
+  }
+
+  .btn-terracotta {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-terracotta-400 px-6 py-3 text-sm font-semibold text-cream-50 transition-all duration-300 hover:bg-terracotta-500 hover:shadow-soft-lg active:scale-95;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FDFAF6;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5C8D4;
+  border-radius: 10px;
+  border: 2px solid #FDFAF6;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A4A8B8;
+}
