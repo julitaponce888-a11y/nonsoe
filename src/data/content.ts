@@ -20,7 +20,7 @@ export const muniCategories: MuniCategory[] = [
     description: 'Texturas suaves y elementos pensados para una experiencia tranquila.',
     icon: 'Moon',
     accent: 'lavender',
-    image: 'https://images.pexels.com/photos/4887107/pexels-photo-4887107.jpeg?auto=compress&cs=tinysrgb&h=600&w=500',
+    image: '/images/plushies/ballena.jpg',
   },
   {
     id: 'explora',
@@ -28,7 +28,7 @@ export const muniCategories: MuniCategory[] = [
     description: 'Diferentes texturas, formas y detalles para descubrir mediante el tacto.',
     icon: 'Compass',
     accent: 'sage',
-    image: 'https://images.pexels.com/photos/1974656/pexels-photo-1974656.jpeg?auto=compress&cs=tinysrgb&h=600&w=500',
+    image: '/images/plushies/tortuga.jpg',
   },
   {
     id: 'manipula',
@@ -36,7 +36,7 @@ export const muniCategories: MuniCategory[] = [
     description: 'Elementos que se pueden tocar, apretar, mover y explorar.',
     icon: 'Hand',
     accent: 'terracotta',
-    image: 'https://images.pexels.com/photos/36780601/pexels-photo-36780601.jpeg?auto=compress&cs=tinysrgb&h=600&w=500',
+    image: '/images/plushies/abeja.jpg',
   },
   {
     id: 'acompana',
@@ -44,7 +44,7 @@ export const muniCategories: MuniCategory[] = [
     description: 'Un MUNI pensado para brindar una experiencia de confort y compañía.',
     icon: 'Heart',
     accent: 'bluegray',
-    image: 'https://images.pexels.com/photos/38739419/pexels-photo-38739419.jpeg?auto=compress&cs=tinysrgb&h=600&w=500',
+    image: '/images/plushies/zorro.jpg',
   },
   {
     id: 'personalizado',
@@ -52,7 +52,7 @@ export const muniCategories: MuniCategory[] = [
     description: 'Elegí las características que querés y creá un MUNI único.',
     icon: 'Sparkles',
     accent: 'sage',
-    image: 'https://images.pexels.com/photos/38238529/pexels-photo-38238529.jpeg?auto=compress&cs=tinysrgb&h=600&w=500',
+    image: '',
   },
 ];
 
