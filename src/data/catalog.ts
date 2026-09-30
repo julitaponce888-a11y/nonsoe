@@ -301,6 +301,6 @@ export function getFinalPrice(productId: string): number {
 }
 
 export function formatARS(amount: number): string {
-  return '
+  return 
  + amount.toLocaleString('es-AR');
 }
