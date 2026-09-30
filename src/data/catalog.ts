@@ -190,7 +190,7 @@ export interface ProductCostBreakdown {
 export const productCosts: Record<string, ProductCostBreakdown> = {
   ballena: {
     productId: 'ballena',
-    variableCost: 9520,
+    variableCost: 23000,
     materials: [
       { material: 'Tela reutilizada', unit: 'kg', unitPrice: 3500, quantity: 0.35, amount: 1225 },
       { material: 'Relleno', unit: 'kg', unitPrice: 8500, quantity: 0.40, amount: 3400 },
@@ -203,7 +203,7 @@ export const productCosts: Record<string, ProductCostBreakdown> = {
   },
   tortuga: {
     productId: 'tortuga',
-    variableCost: 5640,
+    variableCost: 16000,
     materials: [
       { material: 'Tela reutilizada', unit: 'kg', unitPrice: 3500, quantity: 0.30, amount: 1050 },
       { material: 'Relleno', unit: 'kg', unitPrice: 8500, quantity: 0.35, amount: 2975 },
@@ -215,7 +215,7 @@ export const productCosts: Record<string, ProductCostBreakdown> = {
   },
   zorro: {
     productId: 'zorro',
-    variableCost: 10475,
+    variableCost: 25000,
     materials: [
       { material: 'Tela reutilizada', unit: 'kg', unitPrice: 3500, quantity: 0.28, amount: 980 },
       { material: 'Relleno', unit: 'kg', unitPrice: 8500, quantity: 0.30, amount: 2550 },
@@ -229,7 +229,7 @@ export const productCosts: Record<string, ProductCostBreakdown> = {
   },
   abeja: {
     productId: 'abeja',
-    variableCost: 8200,
+    variableCost: 20000,
     materials: [
       { material: 'Tela reutilizada', unit: 'kg', unitPrice: 3500, quantity: 0.25, amount: 875 },
       { material: 'Relleno', unit: 'kg', unitPrice: 8500, quantity: 0.28, amount: 2380 },
@@ -284,7 +284,7 @@ export const initialInvestment: InitialInvestmentItem[] = [
 export const initialInvestmentTotal = 462000;
 export const aportePorIntegrante = 92400;
 
-export const marginPercent = 65;
+export const marginPercent = 0;
 export const shippingHome = 3500;
 
 const averageVariableCost = Math.round(
@@ -300,7 +300,7 @@ export function getFinalPrice(productId: string): number {
   return Math.round((cost * (1 + marginPercent / 100)) / 100) * 100;
 }
 
+const PESO_SIGN = String.fromCharCode(36);
 export function formatARS(amount: number): string {
-  return 
- + amount.toLocaleString('es-AR');
+  return PESO_SIGN + amount.toLocaleString('es-AR');
 }
